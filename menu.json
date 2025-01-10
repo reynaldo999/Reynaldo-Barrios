@@ -1,0 +1,39 @@
+{
+  "sections": [
+    {
+      "id": "seleccion",
+      "title": "Opinión sobre estilos ",
+      "description": "Selecciona una de las marcas disponibles.",
+      "questions": [
+        "¿Cuál es tu serie de drama favorita?",
+        "¿Qué comedia te ha hecho reír más?",
+        "¿Qué serie de ciencia ficción recomendarías?"
+      ]
+    },
+    {
+      "id": "seleccion",
+      "title": "Preferencias de colores ",
+      "description": "Seleciona tu marca y el color favorito",
+      "questions": [
+        "¿Qué género te gusta más?",
+        "¿Qué tan interesante encuentras la trama?",
+        "¿Qué personaje te parece más memorable?"
+      ]
+    },
+    {
+      "id": "pregunta",
+      "title": "Valoración de marcas ",
+      "description": "deja tu opinion sobre la marca que mas te guste ",
+      "questions": [
+        "¿En qué plataforma ves más series?",
+        "¿Qué plataforma te gustaría explorar más?"
+      ]
+    },
+    {
+      "id": "mpacto social ",
+      "title": "Confirmación de respuestas",
+      "description": " marca mas te gusta .",
+      "questions": []
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+table {
+    border: 1px solid black; /* Borde de la tabla */
+    margin: 20px; /* Márgenes alrededor de la tabla */
+    width: 80%; /* Ancho de la tabla */
+    border-collapse: collapse; /* Para que los bordes de las celdas no se dupliquen */
+  }
+  th, td {
+    padding: 10px; /* Espacio dentro de las celdas */
+    text-align: center; /* Centrar texto */
+  }

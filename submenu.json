@@ -1,0 +1,54 @@
+
+
+{
+    
+    "Inicio": [
+        {"nombre": { "es": "Introducción a la Encuesta", "en": "Introduction to the survey " }, "link": "inicio.html#introducción" },
+        {"nombre": { "es": "Tendencias actuales ", "en": "Current trends " }, "link": "inicio.html#tendencias"},
+        {"nombre": { "es": "Participaciones previas ", "en": "Previous participations " }, "link": "inicio.html#participacion"},
+        {"nombre": { "es": "Noticias de moda ", "en": "Accesorios ideales " }, "link": "inicio.html#faq"}
+    ],
+    "Encuesta": [
+        {"nombre": { "es": "Opinión sobre estilos ", "en": "Opinion on styles " }, "link": "encuesta.html#seleccion" },
+        {"nombre": { "es": "Preferencias de colores ", "en": "Color preferences " }, "link": "encuesta.html#evaluacion"},
+        {"nombre": { "es": "Valoración de marcas ", "en": "Brand valuation " }, "link": "encuesta.html#frecuencia"},
+        {"nombre": { "es": "Impacto social ", "en": "social impact " }, "link": "encuesta.html#confirmacion"}
+    ],
+    "Resultados Generales": [
+        { "nombre": { "es": "Gráficos de tendencias ", "en": "Trend charts " }, "link": "resultados.html#gráficos" },
+        {"nombre": { "es": "Modas más populares ", "en": "Most popular fashions " }, "link": "resultados.html#modas"},
+        {"nombre": { "es": "Opiniones divididas ", "en": "TDivided opinions " }, "link": "resultados.html#opiniones"},
+        {"nombre": { "es": " Predicciones futuras ", "en": "Future predictions " }, "link": "resultados.html#faq"}
+    ],
+    "Marcas": [
+        { "nombre": { "es": "Valoración por Usuarios ", "en": " User rating  " }, "link": "marcas.html#valoración" },
+        {"nombre": { "es": "endencias Asociadas ", "en": " Associated trends  " }, "link": "marcas.html#tendencias"},
+        {"nombre": { "es": "innovaciones Recientes ", "en": "Recent innovations  " }, "link": "marcas.html#innovaciones"},
+        {"nombre": { "es": "Popularidad Global ", "en": "Global popularity " }, "link": "marcas.html#faq"}
+    ],
+    "Eventos de Moda": [
+        { "nombre": { "es": "Desfiles destacados ", "en": " Featured shows  " }, "link": "eventos.html#desfiles" },
+        {"nombre": { "es": "Ferias de moda ", "en": "  fashion fairs  " }, "link": "eventos.html#ferias"},
+        {"nombre": { "es": "Premios y reconocimientos  ", "en": "Awards and recognitions   " }, "link": "eventos.html#premios"},
+        {"nombre": { "es": "Actividades locales ", "en": " Local activities  " }, "link": "eventos.html#faq"}
+    ],
+    "Consejos de Moda": [
+        { "nombre": { "es": "Cómo Aplicar Tendencias ", "en": "How to apply trends  " }, "link": "eventos.html#desfiles" },
+        {"nombre": { "es": "Errores Comunes ", "en": "  Common mistakes  " }, "link": "eventos.html#ferias"},
+        {"nombre": { "es": "Accesorios Ideales   ", "en": " Ideal accessories   " }, "link": "eventos.html#premios"},
+        {"nombre": { "es": "Prendas Imprescindibles ", "en": " Essential garments  " }, "link": "eventos.html#faq"}
+    ],
+    "Preguntas Frecuentes": [
+        { "nombre": { "es": "Participar en Encuestas Futuras  ", "en": "How to apply trends  " }, "link": "faq.html#modificar" },
+        {"nombre": { "es": "Cambiar Respuestas  ", "en": "  Common mistakes  " }, "link": "faq.html#privacidad"},
+        {"nombre": { "es": "Compartir Opiniones    ", "en": " Ideal accessories   " }, "link": "faq.html#consultar"},
+        {"nombre": { "es": "Privacidad de Datos  ", "en": " Essential garments  " }, "link": "faq.html#contactar"}
+    ],
+    "Contacto": [
+        { "nombre": { "es": "Formulario de Sugerencias ", "en": "How to apply trends  " }, "link": "contacto.html#formulario" },
+        {"nombre": { "es": "Redes Sociales ", "en": "  Common mistakes  " }, "link": "contacto.html#redesSociales"},
+        {"nombre": { "es": "Blog de Tendencias   ", "en": " Ideal accessories   " }, "link": "contacto.html#opiniones"},
+        {"nombre": { "es": "Boletines Informativos ", "en": " Essential garments  " }, "link": "contacto.html#cliente"}
+    ]
+
+  }

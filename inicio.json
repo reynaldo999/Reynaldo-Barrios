@@ -1,0 +1,93 @@
+{
+    "languages": {
+      "es": {
+        "nav": [
+          { "text": "Descripción del Proyecto", "href": "#descripcion" },
+          { "text": "Importancia", "href": "#importancia" },
+          { "text": "Beneficios", "href": "#beneficios" },
+          { "text": "Preguntas Frecuentes", "href": "#preguntas" }
+        ],
+        "carousel": {
+          "image": "img/principal4.jpg",
+          "title": "BIENVENIDO AL MENU INICIO"
+        },
+        "sections": [
+          {
+            "id": "descripcion",
+            "title": "Descripción",
+            "image": "img/principal1.jpg",
+            "content": "Este proyecto tiene como objetivo central recopilar opiniones sobre series populares, con el fin de analizar las preferencias de los usuarios y proporcionar recomendaciones personalizadas."
+          },
+          {
+            "id": "importancia",
+            "title": "Importancia de Conocer Opiniones sobre Series",
+            "image": "https://via.placeholder.com/800x400",
+            "content": "Las opiniones de los espectadores ayudan a las plataformas de contenido a mejorar su catálogo y ofrecen a los usuarios la oportunidad de descubrir nuevas series."
+          },
+          {
+            "id": "beneficios",
+            "title": "Beneficios de Participar",
+            "image": "https://via.placeholder.com/800x400",
+            "content": [
+              "Acceso a recomendaciones personalizadas.",
+              "Contribuir al desarrollo de un catálogo más relevante.",
+              "Interacción con otros usuarios interesados en series."
+            ]
+          },
+          {
+            "id": "preguntas",
+            "title": "Preguntas Frecuentes",
+            "content": [
+              { "question": "¿Qué tipo de series se incluyen en el análisis?", "answer": "Todas las series disponibles en plataformas de streaming como Netflix, HBO, Disney+, entre otras." },
+              { "question": "¿Es obligatorio participar en las encuestas?", "answer": "No, pero tu participación ayudará a mejorar las recomendaciones." }
+            ]
+          }
+        ]
+      },
+      "en": {
+        "nav": [
+          { "text": "Project Description", "href": "#descripcion" },
+          { "text": "Importance", "href": "#importancia" },
+          { "text": "Benefits", "href": "#beneficios" },
+          { "text": "FAQ", "href": "#preguntas" }
+        ],
+        "carousel": {
+          "image": "img/principal4.jpg",
+          "title": "WELCOME TO THE START MENU"
+        },
+        "sections": [
+          {
+            "id": "descripcion",
+            "title": "Description",
+            "image": "img/principal1.jpg",
+            "content": "This project aims to collect opinions about popular series to analyze user preferences and provide personalized recommendations."
+          },
+          {
+            "id": "importancia",
+            "title": "Importance of Knowing Series Opinions",
+            "image": "https://via.placeholder.com/800x400",
+            "content": "Viewer opinions help content platforms improve their catalog and offer users the opportunity to discover new series."
+          },
+          {
+            "id": "beneficios",
+            "title": "Participation Benefits",
+            "image": "https://via.placeholder.com/800x400",
+            "content": [
+              "Access to personalized recommendations.",
+              "Contribute to the development of a more relevant catalog.",
+              "Interact with other users interested in series."
+            ]
+          },
+          {
+            "id": "preguntas",
+            "title": "FAQ",
+            "content": [
+              { "question": "What types of series are included in the analysis?", "answer": "All series available on streaming platforms like Netflix, HBO, Disney+, among others." },
+              { "question": "Is it mandatory to participate in surveys?", "answer": "No, but your participation will help improve the recommendations." }
+            ]
+          }
+        ]
+      }
+    }
+  }
+  

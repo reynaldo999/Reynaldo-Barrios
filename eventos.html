@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+ 
+  <link rel="stylesheet" href="eventos.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg  navbar-light shadow-sm sticky-top" style="background-color: #cb34e9;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <select id="languageSelector" class="form-select form-select-sm w-auto">
+          <option value="es">Español</option>
+          <option value="en">English</option>
+        </select>
+        <!--<img src="img/logoo.jpg" alt="Logo" width="60" height="60" class="d-inline-block align-text-center">--> <!-- el logo -->
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link" href="#desfiles">Desfiles destacados  </a>
+          <a class="nav-link" href="#ferias">Ferias de moda  </a>
+          <a class="nav-link" href="#premios">Premios reconocimientos  </a>
+          <a class="nav-link" href="#faq">Actividades locales  </a>
+          <!-- Botón Volver -->
+          <!--<a class="btn btn-secondary btn-volver" href="index.html">Volver al Menú Principal</a>-->
+          <a class="btn btn-door" href="index.html"><i class="fas fa-door-open"></i> </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="bg-black">
+    <div class="carousel-inner py-5">
+        <div class="carousel-item active">
+            <img src="img/principal10.jpg" class="d-block w-100" alt="Menú saludable" style="height: 60vh; object-fit: cover; opacity: 0.7;">
+            <div class="carousel-caption d-flex justify-content-center align-items-center h-500" style="background: rgba(0, 0, 0, 0.219);">
+              <h2 class="text-gradient fs-1 text-center animate__animated animate__bounceIn">11 de los eventos de moda más grandes del mundo</h2>
+            </div>
+        </div>
+    </div> 
+</section>
+
+    
+
+  <div class="container mt-4 "><br><br><br>
+    <!-- Sección 1: Tendencias actuales  -->
+
+    <section id="desfiles" class="mb-5 p-1 bg-white rounded shadow-lg transition-transform transform hover:scale-105">
+      <h2 class="text-3xl font-bold text-purple-600">Desfiles destacados</h2>
+      <p> Los desfiles destacados no solo son una vitrina para las últimas colecciones; son experiencias artísticas que fusionan moda, cultura y tecnología. Cada uno de estos eventos ha aportado algo único al mundo de la moda, dejando una marca indeleble en la historia y continuando inspirando a futuras generaciones de diseñadores y amantes del estilo.</p>
+      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/principal12.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/principal11.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/principal13.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Sección 2: Tendencias actuales  -->
+    <section id="ferias" class="mb-5 p-5 bg-white rounded shadow-lg transition-transform transform hover:scale-105">
+        <h2 class="text-3xl font-bold text-purple-600">Ferias de moda</h2>
+        <img src="img/principal15.jpg" alt="ferias" class="img-fluid rounded mt-3">
+        <p class="mt-3 text-lg text-gray-700">
+          El color es el primer paso para darle un giro renovado a tu armario en 2025. Estos son los tonos que dominarán la próxima temporada, según las pasarelas de primavera-verano. 
+          Estudia su manual de uso al pie de la letra y resolverás con estilo el enigma del qué llevar.
+
+          <div class="input-group mb-3">
+            <button class="btn btn-outline-secondary" type="button">Enviar</button>
+            <select class="form-select" id="inputGroupSelect03" aria-label="Example select with button addon">
+              <option selected>Elija una opcion</option>
+              <option value="1">Marca</option>
+              <option value="2">Modelo</option>
+              <option value="3">Precio</option>
+            </select>
+          </div>
+          
+          <div class="input-group mb-3">
+            <button class="btn btn-outline-secondary" type="button">Enviar</button>
+            <select class="form-select" id="inputGroupSelect03" aria-label="Example select with button addon">
+              <option selected>Elijan una opcion</option>
+              <option value="1">Zaptillas</option>
+              <option value="2">Trajes</option>
+              <option value="3">Otros</option>
+            </select>
+          </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text">Precio</span>
+            <span class="input-group-text">0.00</span>
+            <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+          </div>
+
+    <!-- Sección 3: Participaciones previas  --><br><br>
+    <section id="premios" class="mb-5 p-5 bg-white rounded shadow-lg transition-transform transform hover:scale-105">
+        <h2 class="text-3xl font-bold text-purple-600">Premios y reconocimientos   </h2>
+        <img src="img/principal14.png" alt="premios" class="img-fluid rounded mt-3">
+        <ul class="list-disc list-inside mt-3 text-lg text-gray-700">
+
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title text-center"><p><strong>¿Cuero natural o cuero vegano, ¿qué es más sostenible?</strong></h5>
+                  <p class="card-text">TTodos los materiales y procesos productivos están bajo escrutinio, 
+                    incluyendo el cuero y todas sus alternativas. De ahí el debate en cuanto a la 
+                    sostenibilidad de lo que fue bien recibido en un primer momento bajo el nombre de 
+                    ‘cuero vegano’ como solución a los problemas del ‘cuero natural’.</p>
+                    Una de las Marcas que Saldra en 2025
+                    <h5 class="card-title text-center"><p><strong>¿ Una de las Marcas que Saldra en 2025?</strong></h5>
+                </div>
+              </div>
+            <p><strong> ¿15 innovaciones que cambiarán el futuro de la moda?</strong></p>
+            <li>Acceso a recomendaciones personalizadas.</li>
+            <li>Contribuir al desarrollo de un catálogo más relevante.</li>
+            <li>Interacción con otros marcas de ropas.</li>
+        </ul>
+    </section>
+
+    <!-- Sección 4: Noticias de moda  -->
+    <section id="faq" class="mb-5 p-5 bg-white rounded shadow-lg transition-transform transform hover:scale-105">
+        <h2 class="text-3xl font-bold text-purple-600">Actividades locales  </h2>
+        <img src="img/principal17.png" alt="actividades" class="img-fluid rounded mt-3">
+        <ul class="list-disc list-inside mt-3 text-lg text-gray-700">
+        <div class="mt-3 text-lg text-gray-700">
+          <p><strong>1.   Dior: 12.1% </strong></p>
+            <p><strong> 2.  Dolce & Gabbana: 8.3% </strong></p>
+              <p><strong> 3.  Louis Vuitton: 8%</strong></p>
+                <p><strong> 4.  Prada: 7.8% </strong></p>
+                  <p><strong> 5.  Balenciaga: 7.1%</strong></p>
+                    <p><strong>6.   Gucci: 7.1%</strong></p>
+                      <p><strong>7.   Valentino: 5.7%</strong></p>
+                        <p><strong>8.   Saint Laurent: 5.4%</strong></p>
+                          <p><strong>9.   Fendi: 5%</strong></p>
+                            <p><strong>10.   Versace: 4.6%</strong></p>
+            <p><strong>1. tipos de Marcas mas Polulares?</strong><br> Todas las marcas mas Polulares son Dior, Gucci, Louis Vuitton, Prada, Saint Laurent, Balenciaga, Valentino?.</p>
+            <p><strong>2. ¿Jennifer Lopez terminó el año con estilo en un look de baggy jeans y botas de suela track a los 50?</strong><br> No, pero tu participación ayudará a mejorar las recomendaciones.</p>
+            <p><strong>3. ¿Los vestidos con corte drapeado son la tendencia definitiva para este 2025?</strong><br>"Resultados" de nuestro sitio web".</p>
+        </div>
+      </section>
+
+        <section class="mb-5 p-5 bg-white rounded shadow-lg transition-transform transform hover:scale-105">
+        <div class="icon-1">
+          <div class="icon-img">
+              <img src="img/i3.svg" alt="">
+          </div>
+          <div class="icon-txt">
+              <p><strong>1.   ¿Marcas de Ropas Balenciaga?</strong>
+              <p>
+                  Balenciaga, la casa de moda es conocida por traspasar 
+                  los límites con formas esculturales en tejidos técnicos. 
+              </p>
+          </div>
+          <div class="icon-1">
+            <div class="icon-img">
+                <img src="img/i2.svg" alt="">
+            </div>
+            <div class="icon-txt">
+                <p><strong>2. ¿Marca de Ropas  Louis Vuitton?</strong></p>
+                <p>
+                    Louis Vuitton ha sido sinónimo de diseño único, innovación técnica y artesanía,
+                     valores que siguen vigentes hoy en día.
+                </p>
+            </div>
+            <div class="icon-1">
+              <div class="icon-img">
+                  <img src="img/i1.svg" alt="">
+              </div>
+              <div class="icon-txt">
+                  <p><strong>3. ¿Marca de Ropas Gucci?</strong></p>
+                  <p>
+                      Pide tus regalos online y recógelos
+                       en tu boutique Gucci preferida.
+                  </p>
+              </div>
+            </section>
+          </div>
+          <footer class="text-white py-8 mt-8" style="background-color: #cb34e965;"></nav>
+            <div class="container text-center">
+                    <div class="header-content container">
+                    <h1 style="font-size: 2.5rem;">OFERTAS ESPECIALES</h1>
+                    <p style="font-size: 1.5rem";> estrena las mejores prendas</p>
+                    <a href="#" class="btn-1">informacion</a>
+                  </div>   
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+<footer class="text-white py-1 mt-1" style="background-color: #cb34e965;"></nav>
+    <div class="container text-center">
+        <div class="social-icons mt-3">
+            <a href="#" class="text-facebook me-3"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-instagram me-3"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-twitter me-3"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-tiktok me-3"><i class="fab fa-tiktok"></i></a>
+            <p style="font-size: 1.5rem">&copy; 2025. Derechos de Autor</p>
+        </div>
+    </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="extras.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-secondary navbar-light sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <select id="languageSelector" class="form-select form-select-sm w-auto">
+            <option value="es">Español</option>
+            <option value="en">English</option>
+          </select>
+        <!--<img src="img/logoo.jpg" alt="Logo" width="60" height="60" class="d-inline-block align-text-center">--> <!-- el logo -->
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link" href="#listas">Listas de reproducción recomendadas</a>
+          <a class="nav-link" href="#videos">Videos sobre análisis de series </a>
+          <a class="nav-link" href="#articulos">Artículos y blogs de crítica </a>
+          <a class="nav-link" href="#estadisticas">Estadísticas de visualización global</a>
+          <!-- Botón Volver -->
+          <!--<a class="btn btn-secondary btn-volver" href="index.html">Volver al Menú Principal</a>-->
+          <a class="btn btn-door" href="index.html"> <i class="fas fa-door-open"></i></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-4">
+        <!-- Sección 1: Listas de reproducción recomendadas -->
+        <section id="listas" class="container mx-auto mt-10 p-6">
+            <h1 class="text-center text-3xl font-bold mb-6">🎥 Listas de Reproducción Recomendadas</h1>
+            <p class="text-center text-gray-500 text-lg mb-8">
+                Explora nuestras listas cuidadosamente seleccionadas para encontrar tus próximas series favoritas. Desde risas hasta aventuras intergalácticas, ¡tenemos algo para todos!
+            </p>
+        
+            <div class="row  justify-center">
+                <!-- Comedia -->
+                <div class="col-md-4 mb-4">
+                    <div class="card bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300">
+                        <img src="imgextras/serie comedia.jpeg" class="card-img-top object-cover h-56 w-full" alt="Comedia">
+                        <div class="card-body p-5 flex flex-col">
+                            <h5 class="card-title text-center text-xl font-semibold mb-3">🌟 Mejores Series de Comedia</h5>
+                            <p class="card-text text-gray-600 text-justify mb-5">
+                                Ríe a carcajadas con nuestras selecciones de comedias imperdibles, llenas de humor y situaciones inesperadas. 
+                            </p>
+                            <button class="btn bg-yellow-500 text-white py-2 px-4 rounded-lg hover:bg-yellow-600 mt-auto" onclick="viewList('comedia')">Ver Lista</button>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Drama -->
+                <div class="col-md-4 mb-4">
+                    <div class="card bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300">
+                        <img src="imgextras/Series Dramáticas.jpeg" class="card-img-top object-cover h-56 w-full" alt="Drama">
+                        <div class="card-body p-5 flex flex-col">
+                            <h5 class="card-title text-center text-xl font-semibold mb-3">🎭 Series Dramáticas Imperdibles</h5>
+                            <p class="card-text text-gray-600 text-justify mb-5">
+                                Descubre historias conmovedoras que exploran emociones humanas profundas y relaciones complejas.
+                            </p>
+                            <button class="btn bg-red-500 text-white py-2 px-4 rounded-lg hover:bg-red-600 mt-auto" onclick="viewList('drama')">Ver Lista</button>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Ciencia Ficción -->
+                <div class="col-md-4 mb-4">
+                    <div class="card bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300">
+                        <img src="imgextras/Series Ciencia Ficción.jpeg" class="card-img-top object-cover h-56 w-full" alt="Ciencia Ficción">
+                        <div class="card-body p-5 flex flex-col">
+                            <h5 class="card-title text-center text-xl font-semibold mb-3">🚀 Las Mejores Series de Ciencia Ficción</h5>
+                            <p class="card-text text-gray-600 text-justify mb-5">
+                                Explora universos futuristas llenos de tecnología avanzada, dilemas éticos y mundos fascinantes.
+                            </p>
+                            <button class="btn bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 mt-auto" onclick="viewList('cienciaFiccion')">Ver Lista</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <script>
+            // Función para manejar los botones y mostrar un mensaje simulado de redirección
+            function viewList(category) {
+                switch (category) {
+                    case 'comedia':
+                        alert("Redirigiendo a la lista de Mejores Series de Comedia...");
+                        break;
+                    case 'drama':
+                        alert("Redirigiendo a la lista de Series Dramáticas Imperdibles...");
+                        break;
+                    case 'cienciaFiccion':
+                        alert("Redirigiendo a la lista de Las Mejores Series de Ciencia Ficción...");
+                        break;
+                    default:
+                        alert("Categoría no encontrada.");
+                }
+            }
+        </script>
+        
+        
+
+
+
+
+        <!-- Sección 2: Videos sobre análisis de series -->
+        <section id="videos" class="container mt-4">
+            <h1 class="text-center">Videos sobre Análisis de Series</h1>
+            <p class="text-center mb-4">Explora nuestros videos donde analizamos y discutimos tus series favoritas.</p>
+        
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <iframe width="100%" height="200" src="https://www.youtube.com/embed/VIDEO_ID_1" title="Video Análisis 1" frameborder="0" allowfullscreen></iframe>
+                        <div class="card-body">
+                            <h5 class="card-title">Análisis de Stranger Things</h5>
+                            <p class="card-text">Un análisis profundo sobre cómo esta serie captura la esencia de los años 80.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <iframe width="100%" height="200" src="https://www.youtube.com/embed/VIDEO_ID_2" title="Video Análisis 2" frameborder="0" allowfullscreen></iframe>
+                        <div class="card-body">
+                            <h5 class="card-title">Crítica de The Last of Us</h5>
+                            <p class="card-text">Una reflexión sobre la narrativa emocional y su impacto en la audiencia.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <iframe width="100%" height="200" src="https://www.youtube.com/embed/VIDEO_ID_3" title="Video Análisis 3" frameborder="0" allowfullscreen></iframe>
+                        <div class="card-body">
+                            <h5 class="card-title">Desglose de Breaking Bad</h5>
+                            <p class="card-text">Explorando la transformación del personaje principal y su relevancia cultural.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+                    
+
+        <!-- Sección 3: Artículos y blogs de crítica  -->    
+        <section id="articulos" class="container mt-4">
+            <h1 class="text-center">Artículos y Blogs de Crítica</h1>
+            <p class="text-center mb-4">Explora nuestras reseñas y análisis sobre las mejores series del momento.</p>
+        
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="imgextras/StrangerThings.jpeg" class="card-img-top img-fluid rounded" style="height: 300px; object-fit: cover" alt="Reseña 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Reseña de Stranger Things</h5>
+                            <p class="card-text">Una profunda mirada a cómo esta serie ha capturado la esencia de los años 80.</p>
+                            <a href="#" class="btn btn-primary">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="imgextras/The Last of Us.avif" class="card-img-top img-fluid rounded" style="height: 300px; object-fit: cover" alt="Reseña 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Análisis de The Last of Us</h5>
+                            <p class="card-text">Un análisis sobre la narrativa emocional y su impacto en la audiencia.</p>
+                            <a href="#" class="btn btn-primary">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="imgextras/breaking bad.jpeg" class="card-img-top img-fluid rounded" style="height: 300px; object-fit: cover" alt="Reseña 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Crítica a Breaking Bad</h5>
+                            <p class="card-text">Explorando la transformación del personaje principal y su relevancia cultural.</p>
+                            <a href="#" class="btn btn-primary">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+
+        <!-- Sección 4: Estadísticas de visualización global -->
+        <section id="estadisticas" class="container mt-4">
+            <div class="container mt-4">
+                <h1 class="text-center">Busca las estadísticas de visualización global de todo el mundo</h1>
+        
+                <!-- Botón desplegable -->
+                <div class="mb-4 text-center">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-warning dropdown-toggle mt-2" data-bs-toggle="dropdown" aria-expanded="false">
+                            Buscar Estadísticas
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" onclick="searchSeries('opcion1')">Ingraterra</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="searchSeries('opcion2')">Chile</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="searchSeries('opcion3')">Colombia</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="searchSeries('opcion4')">Estados Unidos</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="searchSeries('opcion5')">Japon</a></li>
+                        </ul>
+                    </div>
+                </div>
+        
+                <!-- Contenedor para mostrar las series -->
+                <div id="seriesContainer" class="row mt-4"></div>
+            </div>
+        
+            <script>
+                // Datos de series populares
+                const seriesData = {
+                    opcion1: [
+                        { title: "Peaky Blinders", image: "imgextras/peakiblinders.jpg" , description: " Un drama criminal ambientado en Birmingham en la década de 1920." },
+                        { title: "Black Mirror", image: "imgextras/blackmirror.jpg", description: "Una antología de ciencia ficción que explora las consecuencias de la tecnología en la sociedad." },
+                        { title: "Line of Duty", image: "imgextras/Line of Duty.jpg", description: "Un drama policial que sigue a un equipo de oficiales anticorrupción." },
+                        { title: "Doctor Who", image: "imgextras/Doctor Who.jpeg", description: "Un clásico de la ciencia ficción que sigue las aventuras de un alienígena que viaja en el tiempo." },
+                        { title: "Sherlock", image: "imgextras/Sherlock.jpg", description: "Una moderna adaptación de las historias de Sherlock Holmes, protagonizada por Benedict Cumberbatch." }
+                    ],
+                    opcion2: [
+                        { title: "La Casa de Papel", image: "imgextras/LaCasaPapel.jpg", description: "Una serie española sobre un atraco a la Fábrica Nacional de Moneda y Timbre." },
+                        { title: "Stranger Things", image: "imgextras/StrangerThings.jpeg", description: "Una serie de ciencia ficción ambientada en los años 80" },
+                        { title: "Game of Thrones", image: "imgextras/GameofThrones.jpeg", description: "Una épica fantasía medieval." },
+                        { title: "The Witcher", image: "imgextras/TheWitcher.jpeg", description: "Basada en la saga literaria de fantasía de Andrzej Sapkowski." },
+                        { title: "Squid Game", image: "imgextras/SquidGame.jpeg", description: "Una serie surcoreana sobre un macabro concurso de supervivencia." }
+                    ],
+                    opcion3: [
+                        { title: "Yo soy Betty, la fea", image: "imgextras/Bettylafea.jpeg", description: "Una serie antológica que explora la relación entre la tecnología y la sociedad." },
+                        { title: "Café con aroma de mujer", image: "imgextras/Caféaromamujer.jpg", description: "Las aventuras de un cazarrecompensas en el universo de Star Wars." },
+                        { title: "La Casa de Papel", image: "imgextras/LaCasaPapel.jpg", description: "Una serie española sobre un atraco a la Fábrica Nacional de Moneda y Timbre." }
+                    ],
+                    opcion4: [
+                        { title: "Stranger Things", image: "imgextras/StrangerThings.jpeg", description: "Una serie de ciencia ficción ambientada en los años 80" },
+                        { title: "The Mandalorian", image: "imgextras/TheMandalorian.jpeg", description: "Una serie de Star Wars ambientada en el universo de Star Wars Episodio VI: El Retorno del Jedi." },
+                        { title: "Squid Game", image: "imgextras/SquidGame.jpeg", description: "La serie surcoreana que ha conquistado al público a nivel global." }
+                    ],
+                    opcion5: [
+                        { title: "Demon Slayer: Kimetsu no Yaiba", image: "imgextras/DemonSlayerKimetsuYaiba.jpeg", description: "Un anime de acción y fantasía." },
+                        { title: "Attack on Titan", image: "imgextras/AttackonTitan.jpg", description: "Un anime post-apocalíptico." },
+                        { title: "Tokyo Revengers", image: "imgextras/TokyoRevengers.jpeg", description: "Un manga y anime de acción y viajes en el tiempo." }
+                    ]
+                };
+        
+                // Función para buscar series según la opción seleccionada
+                function searchSeries(option) {
+                    const seriesContainer = document.getElementById('seriesContainer');
+                    seriesContainer.innerHTML = ''; // Limpiar contenido anterior
+        
+                    const selectedSeries = seriesData[option];
+                    
+                    if (selectedSeries) {
+                        selectedSeries.forEach(series => {
+                            const seriesElement = document.createElement('div');
+                            seriesElement.classList.add('col-md-4', 'mb-4'); // Divisiones en fila de 3 columnas
+                            seriesElement.innerHTML = `
+                                <div class="card">
+                                    <img src="${series.image}" alt="${series.title}" class="card-img-top img-fluid rounded" style="height: 400px; object-fit: cover;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">${series.title}</h5>
+                                        <p class="card-text">${series.description}</p>
+                                    </div>
+                                </div>
+                            `;
+                            seriesContainer.appendChild(seriesElement);
+                        });
+                    }
+                }
+            </script>
+        </section>
+        
+        
+       
+                     
+    </div>
+    <footer class="bg-dark text-white py-3 mt-4">
+        <div class="container text-center">
+            <p>&copy; 2025. Derechos reservados.</p>
+            <div class="social-icons mt-3">
+                <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

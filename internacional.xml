@@ -1,0 +1,115 @@
+<traslations>
+    <!-- ***************** TRADUCCION DEL INDEX***************** -->
+    <key name="intitulo">
+    <es>Modas</es>
+    <en>fashions </en>
+    </key>
+    <key name="incarrusel1">
+    <es>¡Las Mejores Marcas de Ropas!</es>
+    <en>The Best Clothing Brands!</en>
+    </key>
+    <key name="inseccionbe1">
+    <es>¿Aqui las Mejores Marcas de Ropas mas Populares ?</es>
+    <en>Here are the Best Most Popular Clothing Brands?</en>
+    </key>
+    <key name="inseccionbe2">
+    <es>las mejores marcas de ropas anivel mundial.</es>
+    <en>the best clothing brands in the world.</en>
+    </key>
+    <key name="inseccionbe3">
+    <es>Las Mejores Ropas y Marcas.</es>
+    <en>The Best Clothes and Brands.</en>
+    </key>
+    <key name="inseccionbe4">
+    <es>Gucci: Desde su creación en 1921 en Florencia, Gucci ha sido conocida por su diseño audaz y su doble 'G'. 
+    La marca combina la elegancia con un toque moderno, siendo famosa por sus bolsos y calzado.</es>
+    <en>Gucci: Since its creation in 1921 in Florence, Gucci has been known for its bold design and double 'G'. 
+            The brand combines elegance with a modern touch, being famous for its bags and footwear.</en>
+    </key>
+    <key name="inseccionbe5">
+    <es>Prada: Reconocida por su enfoque innovador y vanguardista, 
+            Prada mantiene una fuerte presencia en el mercado del lujo con productos que combinan funcionalidad y estilo.</es>
+    <en>Prada: Recognized for its innovative and avant-garde approach, 
+            Prada maintains a strong presence in the luxury market with products that combine functionality and style.</en>
+    </key>
+    <key name="inseccionbe6">
+    <es>Louis Vuitton: Aunque ha caído a la segunda posición en popularidad, Louis Vuitton sigue siendo un pilar en la moda de lujo. 
+            Conocida por su marroquinería y accesorios, esta marca mantiene un fuerte atractivo entre los consumidores de todas las edades.</es>
+    <en>Louis Vuitton: Although it has fallen to second position in popularity, Louis Vuitton remains a mainstay in luxury fashion. 
+            Known for its leather goods and accessories, this brand maintains a strong appeal among consumers of all ages.</en>
+    </key>
+
+    <key name="inseccionbe7">
+    <es> Elige una Marca </es>
+    <en>Choose to Brand</en>
+    </key>
+    <key name="inseccionbe8">
+    <es> Opcion de tu marca </es>
+    <en>Your brand option</en>
+    </key>
+    <key name="inseccionbe9">
+    <es> Escoge tu Marca Favorita </es>
+    <en>Choose your Favorite Brand</en>
+    </key>
+    <key name="inseccionbe10">
+    <es> Marcas de Mopas Deportivas mas Populares </es>
+    <en>Most Popular Sports Mop Brands</en>
+    </key>
+    <key name="inseccionbe11">
+    <es> Echa un vistazo a nuestras marcas mas recomendadas y populares </es>
+    <en>Take a look at our most recommended and popular brands.</en>
+    </key>
+    <key name="inseccionbe12">
+    <es> Una marcas más conocidas y valiosas del mundo </es>
+    <en>One of the most well-known and valuable brands in the world.</en>
+    </key>
+    <key name="inseccionbe13">
+    <es> Otra de las mejores marcas del mercado. </es>
+    <en>Another of the best brands on the market.</en>
+    </key>
+    <key name="inseccionbe14">
+    <es> tenis y ropa deportiva de calidad excepcional.</es>
+    <en>Tennis and sportswear of exceptional quality.</en>
+    </key>
+    <key name="inseccionbe15">
+    <es> 2025 Derechos de Autor.</es>
+    <en>2025 Copyright.</en>
+    </key>
+    <!-- ***************** FIN DEL INDEX***************** -->
+
+
+<!-- ***************** TRADUCCION DEL INICIO ***************** -->
+    <key name="iniciotitulo">
+    <es>Inicio</es>
+    <en>Home</en>
+    </key>
+    <key name="submenu1">
+    <es>Introducion a la Encuesta </es>
+    <en> Introduction to the survey n</en>
+    </key>
+    <key name="submenu2">
+    <es> Tendencias actuales </es>
+    <en> Current trends</en>
+    </key>
+    <key name="submenu3">
+    <es>Participaciones previas</es>
+    <en> Previous participations  </en>
+    </key>
+    <key name="submenu4">
+    <es> Noticias de moda</es>
+    <en> Fashion news</en>
+    </key>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</traslations>

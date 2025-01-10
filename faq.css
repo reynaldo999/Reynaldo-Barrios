@@ -1,0 +1,90 @@
+/*esta parte es el body*/
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('img/salir1.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    margin: 0;
+    padding: 20px;
+  }
+  .container {
+    min-height: 80px;
+    background: linear-gradient(
+      90deg,
+      rgba(203,18,133,1)0%,
+      rgba(80,49,145,1)70%
+        
+    );
+  }
+  /* Estilos personalizados para el carrusel */
+  #carouselExample .carousel-item {
+    height: auto !important; /* Ajusta la altura según tus necesidades */
+  }
+  #carouselExample .carousel-item img {
+    border-radius: 15px; /* Bordes redondeados */
+    filter: brightness(0.9); /* Ajusta el brillo */
+    transition: transform 0.5s ease; /* Transición suave */
+    width: 100%; /* Cambia a 100% para que ocupe todo el ancho del contenedor */
+    height: auto; /* Cambia a 100% para que ocupe toda la altura del contenedor */
+    object-fit: contain; /* Muestra toda la imagen sin recortes */
+  }
+  
+  #carouselExample .carousel-item img:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
+  }
+  
+  /* Espacio entre el navbar y el carrusel */
+  #carouselExample {
+    margin-top: 20px; /* Ajusta este valor según sea necesario */
+  }
+  
+  @media (max-width: 767.98px) {
+    .carousel-caption {
+        font-size: 14px; /* Ajusta el tamaño de fuente para móviles */
+        bottom: 10px; /* Ajusta la posición vertical para móviles */
+  
+        position: absolute;
+        top: 20px; /* Ajusta la distancia desde la parte superior */
+        left: 50%;
+        transform: translateX(-50%);
+        color: bl; /* Color del texto */
+        text-shadow: 2px 2px 4px rgba(245, 6, 233, 0.418); /* Sombra para mejor legibilidad */
+    }
+  }
+    /* Estilo personalizado para que los submenús se desplieguen hacia abajo */
+  .dropdown-menu {
+  display: none; /* Oculta los submenús inicialmente */
+  position: absolute;
+  top: 100%; /* Despliega justo debajo del menú principal */
+  left: 0;
+  z-index: 1000;
+  background: #e6c8e3;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+  display: block; /* Muestra los submenús al pasar el mouse */
+  background: #f104e5;
+  }
+  
+  .dropdown-menu .dropdown-item {
+  white-space: nowrap;
+  }
+  .dropdown:hover {
+    background: #f3f1f3;
+  }  
+  table {
+    border: 1px solid rgb(0, 0, 0); /* Borde de la tabla */
+    margin: 20px; /* Márgenes alrededor de la tabla */
+    width: 80%; /* Ancho de la tabla */
+    border-collapse: collapse; /* Para que los bordes de las celdas no se dupliquen */
+  }
+  th, td {
+    padding: 10px; /* Espacio dentro de las celdas */
+  }
+  .text-gradient {
+    background: linear-gradient(90deg, #ff6a00, #ee0979);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textAnimation 3s ease-in-out infinite;
+}

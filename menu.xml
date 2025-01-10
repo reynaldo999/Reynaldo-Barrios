@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+    <item>
+        <nombre>
+            <es>Inicio</es>
+            <en>Home</en>
+        </nombre>
+        <link>index.html</link>
+    </item>
+    <item>
+        <nombre>
+            <es>Encuesta</es>
+            <en>Opinion</en>
+        </nombre>
+        <link>encuesta.html</link>        
+    </item>
+    <item>
+        <nombre>
+            <es>Resultados Generales</es>
+            <en>General Results</en>
+        </nombre>
+        <link>resultados.html</link>
+    </item>
+    <item>
+        <nombre>
+            <es>Marcas</es>
+            <en>brands</en>
+        </nombre>
+        <link>marcas.html</link>
+    </item>
+    <item>
+        <nombre>
+            <es>Eventos de Moda</es>
+            <en>Fashion Events</en>
+        </nombre>
+        <link>eventos.html</link>
+    </item>
+    <item>
+        <nombre>
+            <es>Consejos de Moda</es>
+            <en>Fashion Tips</en>
+        </nombre>
+        <link>consejos.html</link>
+    </item>
+    <item>
+        <nombre>
+            <es>Preguntas Frecuentes</es>
+            <en>FAQ</en>
+        </nombre>
+        <link>faq.html</link>
+    </item>
+    <item>
+        <nombre>
+            <es>Contacto</es>
+            <en>Contact</en>
+        </nombre>
+        <link>contacto.html</link>
+    </item>
+</menu>
+
+
+
+
+
+
+
+
+
+
+
+
+

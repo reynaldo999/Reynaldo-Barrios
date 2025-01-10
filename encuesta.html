@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encuesta de Actividades</title>
+  <link rel="stylesheet" href="encuesta.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light shadow-sm sticky-top " style="background-color: #cb34e9;">
+    <div class="container">
+      <a class="navbar-brand" href="#">Encuesta</a>
+      <select id="languageSelector" class="form-select form-select-sm w-auto">
+        <option value="es">Español</option>
+        <option value="en">English</option>
+      </select>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#seleccion">Opinión sobre estilos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#evaluacion">Preferencias de colores</a></li>
+          <li class="nav-item"><a class="nav-link" href="#frecuencia">Valoración de marcas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#confirmacion">Impacto social</a></li>
+          <a class="btn btn-door" href="index.html"> <i class="fas fa-door-open"></i></a>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+    <!-- Formulario Unificado -->
+    <form id="encuesta-form">
+      <!-- Selección de series populares -->
+      <section id="seleccion" class="text-2xl font-bold text-center mb-6 mb-5">
+        <h2>Selecciona tu Marca favorita y tu Prenda que más usas y Accesorios</h2>
+        <div class="row" id="marcas-populares">
+          <!-- Las opciones de actividades se llenan dinámicamente con JavaScript -->
+        </div>
+      </section>
+
+      <!-- Evaluación por género, trama, personajes -->
+      <section id="evaluacion" class="bg-gray-100 py-8">
+        <h2 class="text-2xl font-bold text-center mb-6">Elige tu Accesorios mas Comunes</h2>
+        <!-- Evaluación de Género -->
+        <div>
+          <h3 class="text-lg font-semibold mb-3">1. ¿Qué Marca mas te Gusta?</h3>
+          <div class="space-y-2">
+            <label><input type="radio" name="genero" value="gucci">  Gucci</label><br>
+            <label><input type="radio" name="genero" value="louis vuitton">  Louis Vuitton</label><br>
+            <label><input type="radio" name="genero" value="Prada">  Prada</label><br>
+            <label><input type="radio" name="genero" value="saint laurent">  Saint Laurent</label>
+          </div>
+        </div>
+
+        <!-- Evaluación de Trama -->
+        <div>
+          <h3 class="text-lg font-semibold mb-3">2. ¿Qué Tipo de Ropas de Vertir mas Usas ?</h3>
+          <div class="space-y-2">
+            <label><input type="radio" name="trama" value="Camisas">  Camisas</label><br>
+            <label><input type="radio" name="trama" value="oantalon">   Pantalon</label><br>
+            <label><input type="radio" name="trama" value="canguros">  Canguros</label><br>
+            <label><input type="radio" name="trama" value="yogger">  Yogger</label>
+          </div>
+        </div>
+
+        <!-- Evaluación de Personajes -->
+        <div>
+          <h3 class="text-lg font-semibold mb-3">3. ¿Qué tipo de Vestimenta?</h3>
+          <div class="space-y-2">
+            <label><input type="radio" name="personajes" value="clasico"> Clasico</label><br>
+            <label><input type="radio" name="personajes" value="juvenil">  Juvenil</label><br>
+            <label><input type="radio" name="personajes" value="deportivas">  Deportivas</label><br>
+            <label><input type="radio" name="personajes" value="otros">  Otros</label>
+          </div>
+        </div>
+      </section>
+
+      <!-- Preferencias de plataformas -->
+      <section id="frecuencia" class="mb-5">
+        <h2>Preferencia de las Mejores Marcas </h2>
+        <div class="mb-3">
+          <label for="frecuencia-select" class="form-label">Cual de estas Marcas es la que mas te Gusta usar :</label>
+          <select class="form-select" id="frecuencia-select" name="plataforma">
+            <option value="">Selecciona una de las Marcas </option>
+                <option value="gucci">Gucci</option>
+                <option value="louisvitton">Louis Vuitton</option>
+                <option value="breakingBad">Breaking Bad</option>
+                <option value="prada">Prada</option>
+                <option value="saint laurent">Saint Laurent</option>
+            <!-- Las opciones se llenan dinámicamente con JavaScript -->
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="descripcion" class="form-label">Describe Brevemente por qué te Gusta una de las Marcas de Ropa:</label>
+          <textarea class="form-control" id="descripcion" name="descripcion" rows="3"></textarea>
+        </div>
+      </section>
+
+      <!-- Confirmación de respuestas -->
+      <section id="confirmacion">
+        <button type="submit" id="confirm-button" class="">enviar Respuesta</button>
+        <h2 class="text-primary">Confirmación de Respuestas</h2>
+        <div id="confirmation-message" class="alert alert-success mt-3 d-none">Tus respuestas han sido guardadas correctamente.</div>
+      </section>
+    </form>
+  </div>
+
+  <style>
+    /* Estilos básicos para la encuesta */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        padding: 20px;
+    }
+
+   
+
+    h2 {
+        text-align: center;
+        color: #333;
+    }
+
+    .question {
+        margin-bottom: 20px;
+    }
+
+    .question label {
+        display: block;
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .question input[type="radio"], 
+    .question input[type="checkbox"] {
+        margin-right: 10px;
+    }
+
+    .question input[type="text"], 
+    .question textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    .question textarea {
+        resize: vertical;
+    }
+
+    button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        font-size: 18px;
+        background-color: #cb34e9;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #cb34e9;
+    }
+
+    .response-text {
+        font-size: 16px;
+        margin-top: 20px;
+        text-align: center;
+        color: #333;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Encuesta de Opinión de Marcas mas Famosas </h2>
+    
+    <form action="#">
+        <!-- Pregunta 1 -->
+        <div class="question">
+            <label for="q1">¿Cuál es tu color favorito?</label>
+            <input type="radio" id="rojo" name="color" value="Rojo">
+            <label for="rojo">Rojo</label> 
+            <input type="radio" id="azul" name="color" value="Azul">
+            <label for="azul">Azul</label>
+            <input type="radio" id="verde" name="color" value="Verde">
+            <label for="verde">Verde</label>
+            <input type="radio" id="otros" name="color" value="otros">
+            <label for="verde">otros</label>
+        </div>
+
+        <!-- Pregunta 2 -->
+        <div class="question">
+            <label for="q2">¿Cuáles de estas Marcas Usas Mas?</label>
+            <input type="checkbox" id="gucci" name="marcas de ropas" value="gucci">
+            <label for="gucci">Gucci</label>
+            <input type="checkbox" id="louis vuitton" name="nmarca de ropas value="louis vuitton>
+            <label for="louis vuitton">Louis Vuitton</label>
+            <input type="checkbox" id="balenciaga" name="marca de ropas" value="balenciaga">
+            <label for="balenciaga">Balenciaga</label>
+            <input type="checkbox" id="otro" name="marca de ropas" value="otros">
+            <label for="otros">Otros</label>
+        </div>
+
+        <!-- Pregunta 3 -->
+        <div class="question">
+            <label for="q3">¿Tienes alguna sugerencia para mejorar la encuesta?</label>
+            <textarea id="sugerencias" name="sugerencias" rows="4" placeholder="Escribe tu sugerencia aquí..."></textarea>
+        </div>
+
+        <!-- Enviar -->
+        <button type="submit">Enviar Encuesta</button>
+    </form>
+</div>
+
+<!-- Respuesta después de enviar -->
+<div class="response-text">
+    <p>Gracias por tu participación en la encuesta. ¡Tus respuestas han sido registradas!</p>
+</div>
+</body>
+
+  <footer class=" text-light py-3" style="background-color: #cb34e9;">
+    <div class="container text-center">
+      <p>Actividad Encuesta deL 2025</p>
+      <p>&copy; 2025 Todos los derechos Reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    const dataUrl = 'encuesta.json';
+    const form = document.getElementById('encuesta-form');
+    const confirmationMessage = document.getElementById('confirmation-message');
+
+    // Cargar datos y renderizar opciones
+    fetch(dataUrl)
+      .then(response => response.json())
+      .then(data => {
+        const seriesContainer = document.getElementById('series-populares');
+        data.actividades.forEach(actividad => {
+          const checkbox = `<div class="col-md-4">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="series" value="${actividad}" id="${actividad}">
+                                <label class="form-check-label" for="${actividad}">${actividad}</label>
+                              </div>
+                            </div>`;
+          seriesContainer.insertAdjacentHTML('beforeend', checkbox);
+        });
+
+        const frecuenciaSelect = document.getElementById('frecuencia-select');
+        data.frecuencias.forEach(frecuencia => {
+          const option = `<option value="${frecuencia}">${frecuencia}</option>`;
+          frecuenciaSelect.insertAdjacentHTML('beforeend', option);
+        });
+      });
+
+    // Confirmar respuestas
+    form.addEventListener('submit', event => {
+      event.preventDefault();
+      confirmationMessage.classList.remove('d-none');
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+</html>
