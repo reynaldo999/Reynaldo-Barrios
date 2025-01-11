@@ -33,10 +33,10 @@
         {"nombre": { "es": "Actividades locales ", "en": " Local activities  " }, "link": "eventos.html#faq"}
     ],
     "Consejos de Moda": [
-        { "nombre": { "es": "Cómo Aplicar Tendencias ", "en": "How to apply trends  " }, "link": "eventos.html#desfiles" },
-        {"nombre": { "es": "Errores Comunes ", "en": "  Common mistakes  " }, "link": "eventos.html#ferias"},
-        {"nombre": { "es": "Accesorios Ideales   ", "en": " Ideal accessories   " }, "link": "eventos.html#premios"},
-        {"nombre": { "es": "Prendas Imprescindibles ", "en": " Essential garments  " }, "link": "eventos.html#faq"}
+        { "nombre": { "es": "Cómo Aplicar Tendencias ", "en": "How to apply trends  " }, "link": "consejos.html#desfiles" },
+        {"nombre": { "es": "Errores Comunes ", "en": "  Common mistakes  " }, "link": "consejos.html#ferias"},
+        {"nombre": { "es": "Accesorios Ideales   ", "en": " Ideal accessories   " }, "link": "consejos.html#premios"},
+        {"nombre": { "es": "Prendas Imprescindibles ", "en": " Essential garments  " }, "link": "consejos.html#faq"}
     ],
     "Preguntas Frecuentes": [
         { "nombre": { "es": "Participar en Encuestas Futuras  ", "en": "How to apply trends  " }, "link": "faq.html#modificar" },
